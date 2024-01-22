@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
-<!-- Leonardo Cassiano -->
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Jogo da Forca</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="website icon" type="imagem" href="Complements/Imagens/Forca.png">
-</head>
+  <!-- Leonardo Cassiano -->
 
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jogo da Forca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="website icon"
+      type="imagem"
+      href="Complements/Imagens/Forca.png"
+    />
+  </head>
+
+  <body>
     <h1>JOGO DA FORCA</h1>
     <p>Descubra a palavra - Digite uma letra:</p>
-    <p> <strong>DICA:</strong> ANIMAL </p>
+    <p><strong>DICA:</strong> ANIMAL</p>
 
     <div class="box">
+      <svg width="200" height="250">
+        <!--desenhando o boneco-->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="230" />
 
-        <svg width="200" height="250">
-            <!--desenhando o boneco-->
-            <line x1="60" y1="20" x2="140" y2="20" />
-            <line x1="140" y1="20" x2="140" y2="50" />
-            <line x1="60" y1="20" x2="60" y2="230" />
+        <circle cx="140" cy="70" r="20" class="part" />
 
-            <circle cx="140" cy="70" r="20" class="part" />
+        <line x1="140" y1="90" x2="140" y2="150" class="part" />
 
-            <line x1="140" y1="90" x2="140" y2="150" class="part" />
+        <line x1="140" y1="120" x2="120" y2="100" class="part" />
+        <line x1="140" y1="120" x2="160" y2="100" class="part" />
 
-            <line x1="140" y1="120" x2="120" y2="100" class="part" />
-            <line x1="140" y1="120" x2="160" y2="100" class="part" />
-
-            <line x1="140" y1="150" x2="120" y2="180" class="part" />
-            <line x1="140" y1="150" x2="160" y2="180" class="part" />
-        </svg>
-        <div class="wrong-letters"></div>
-        <div class="word"></div>
+        <line x1="140" y1="150" x2="120" y2="180" class="part" />
+        <line x1="140" y1="150" x2="160" y2="180" class="part" />
+      </svg>
+      <div class="wrong-letters"></div>
+      <div class="word"></div>
     </div>
 
     <div class="popup">
-        <p class="message"></p>
-        <p class="reveal-word"></p>
-        <button>Jogar Novamente</button>
+      <p class="message"></p>
+      <p class="reveal-word"></p>
+      <button>Jogar Novamente</button>
     </div>
 
     <div class="notification">
-        <p>Você já digitou essa letra</p>
+      <p>Você já digitou essa letra</p>
     </div>
-    <script src='main.js'></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
